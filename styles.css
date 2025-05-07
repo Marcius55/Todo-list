@@ -1,0 +1,114 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
+    background: #ffffff;
+    background: linear-gradient(134deg,rgba(255, 255, 255, 1) 0%, rgba(148, 187, 233, 1) 100%);
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+
+h1 {
+    color: #fff;
+}
+
+.toggled {
+    color: red;
+    text-decoration: line-through;
+}
+
+.delete-btn {
+    color: rgb(79, 79, 79);
+    order: 3;
+    padding: 1rem 1.25rem;
+    border-radius: 4px;
+    background: none;
+    cursor: pointer;
+    border: none;
+    font-size: 2rem;
+    transition: 0.5s;
+}
+
+.delete-btn:hover {
+    color: red;
+    transition: 0.5s;
+}
+
+.mark-btn {
+    order: 1;
+    appearance: none;
+    width: 32px;
+  height: 32px;
+  border: 2px solid black;
+  border-radius: 4px;
+  cursor: pointer;
+  position: relative;
+  transition: background-color 0.3s ease;
+}
+
+.mark-btn:checked {
+    background-color: rgb(18, 156, 18);
+    border: none;
+  }
+  
+  .mark-btn:checked::after {
+    content: '✓';
+    color: white;
+    font-size: 21px;
+    position: absolute;
+    top: 2px;
+    left: 7px;
+  }
+
+.input-wrapper {
+    padding: 10rem;
+    background: rgb(0, 111, 135);
+    border-radius: 82px 0px;
+}
+
+.input-field {
+    border-radius: 4px;
+    border-style: solid;
+    padding: 1.25rem 3rem;
+    font-size: 1rem;
+    outline: none;
+    border: 1px solid #ccc;
+}
+
+#main-button {
+    border-radius: 4px;
+    padding: 1.25rem 2rem;
+    cursor: pointer;
+    font-size: 1rem;
+    border: none;
+    background: #ffffff;
+}
+
+#main-button:hover {
+    background-color: rgb(118, 118, 118);
+    transition: 0.5s;
+}
+.item-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+    flex-wrap: wrap; 
+    word-break: break-word;
+    padding: 0.5rem;
+    background-color: #fff;
+    border-radius: 8px;
+    margin-top: 1rem;
+}
+h2 {
+    order: 2;
+    flex-grow: 1;
+    flex-shrink: 1;
+    text-align: left;
+    margin: 0;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    max-width: 100%;
+}
+
